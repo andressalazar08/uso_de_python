@@ -103,10 +103,33 @@ Son estructuras en python más rigidas,
 son inmutables,
 almacenan distintos tipos de datos
 las tuplas tienen posición
+()
 '''
 tupla_1=(1,1,1,1,1,1,1,1,"b", True)
-print(type(tupla_1))
-print(tupla_1.count("b"))
+#print(type(tupla_1))
+#print(tupla_1.count("b"))
 
-print(tupla_1.index("b"))
+#print(tupla_1.index("b"))
 
+
+'''
+Uso de listas
+[]
+'''
+
+mi_lista=[9,5,8,15,True]
+print(mi_lista)
+print(len(mi_lista)) #Función de python len
+mi_lista.append(False) #Aplicando un método a la lista
+print(mi_lista)
+print(sum(mi_lista)) #función de python sum
+
+'''
+Uso de diccionarios
+{clave:valor,clave:valor,clave:valor,clave:valor,....}
+'''
+estudiantes={"Andres": {"edad":25,"Ciudad origen":"Cali"}, "Jose":22, "Diana":26}
+print(estudiantes.keys())
+print(estudiantes.values())
+print(estudiantes.pop("Diana")) #imprime el resultado de aplicar el método pop
+print(estudiantes)
